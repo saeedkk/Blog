@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Numito_Blog.CoreLayer</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="DTOs\Categories\" />
+    <Folder Include="DTOs\Posts\" />
+    <Folder Include="DTOs\Users\" />
+    <Folder Include="Mappers\" />
+    <Folder Include="Services\Categories\" />
+    <Folder Include="Services\FileManager\" />
+    <Folder Include="Services\Posts\" />
+    <Folder Include="Services\Users\" />
+    <Folder Include="Utilities\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Numito-Blog.DataLayer\Numito-Blog.DataLayer.csproj" />
+  </ItemGroup>
+
+</Project>
